@@ -14,7 +14,7 @@
 // }
 // console.log(chessBoard());
 
-VARIABLES
+// VARIABLES
 let col;
 let row;
 
