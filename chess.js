@@ -14,26 +14,25 @@
 // }
 // console.log(chessBoard());
 
-// VARIABLES
-let col;
-let row;
-
 function chessBoard(size) {
- let spChar = '';  //declaring spChar an empty string
+ let specChar = '';  //declaring specChar an empty string
  // LOOPING OVER THE ROW
  for (let row = 1; row <= size; row++) {
 
-  // IF ROW HAS A VALUE THAT IS EVEN
-  if (row % 2 === 0) {
-   spChar += ''; // empty string
-  }
+   specChar += ''; // empty string
+
   // LOOPING OVER THE COLUMN
   for (let col = 1; col <= size; col++) {
-   spChar += ' #';
+
+   specChar += '  #';
+
   }
-  spChar += '\n';
+
+  specChar += '\n';
+
  }
- return spChar;
+
+ return specChar;
 }
 
 console.log(chessBoard(8));
